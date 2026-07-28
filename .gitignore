@@ -1,0 +1,37 @@
+# ══════════════════════════════════════════════════════════════════════════════
+#  KHO NÀY CÔNG KHAI TRÊN INTERNET.
+#
+#  Chỉ được chứa file HTML đã mã hoá AES do _cong_cu/bao_cao/3_dang_web.py sinh ra.
+#  Danh sách dưới đây là lưới an toàn cuối cùng: chặn những loại file không bao giờ
+#  được phép xuất hiện ở đây, phòng trường hợp copy nhầm.
+#
+#  Nếu cần thêm một loại file mới vào kho này, dừng lại và tự hỏi:
+#  "file này lộ ra Internet thì có sao không?"
+# ══════════════════════════════════════════════════════════════════════════════
+
+# Dữ liệu nguồn — tuyệt đối không
+*.xlsx
+*.xls
+*.xlsm
+*.pdf
+*.docx
+*.doc
+*.dwg
+*.dxf
+*.csv
+
+# Bản rõ của báo cáo và số liệu đã trích
+BaoCao_QuanTri_*.html
+so_lieu_bao_cao.json
+
+# Mật khẩu và khoá
+*mat_khau*
+*.key
+*.pem
+.env
+
+# Tạm
+~$*
+Thumbs.db
+desktop.ini
+__pycache__/

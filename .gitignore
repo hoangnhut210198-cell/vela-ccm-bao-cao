@@ -1,7 +1,7 @@
 # ══════════════════════════════════════════════════════════════════════════════
 #  KHO NÀY CÔNG KHAI TRÊN INTERNET.
 #
-#  Chỉ được chứa file HTML đã mã hoá AES do _cong_cu/bao_cao/3_dang_web.py sinh ra.
+#  Chỉ được chứa file HTML đã mã hoá AES do _cong_cu/bao_cao/bctc_4_dang_web.py sinh ra.
 #  Danh sách dưới đây là lưới an toàn cuối cùng: chặn những loại file không bao giờ
 #  được phép xuất hiện ở đây, phòng trường hợp copy nhầm.
 #
@@ -20,9 +20,13 @@
 *.dxf
 *.csv
 
-# Bản rõ của báo cáo và số liệu đã trích
-BaoCao_QuanTri_*.html
+# Bản rõ của báo cáo và số liệu đã trích.
+# Trang đã mã hoá luôn tên là index.html, nên chặn mọi tên BaoCao_* là an toàn tuyệt đối.
+# Trước 06/08/2026 ở đây chỉ chặn tên đời V4 (BaoCao_QuanTri_* / so_lieu_bao_cao.json),
+# nên bản rõ đời BCTC copy nhầm vào đây sẽ lọt lưới mà không ai biết.
+BaoCao_*.html
 so_lieu_bao_cao.json
+so_lieu_bctc.json
 
 # Mật khẩu và khoá
 *mat_khau*
